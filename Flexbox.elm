@@ -22,12 +22,6 @@ type FlexDirection
     | Column
 
 
-type AlignItems
-    = Center
-    | FlexStart
-    | FlexEnd
-
-
 layoutPrimitive : List (Attribute msg) -> List (Html msg) -> FlexDirection -> Html msg
 layoutPrimitive attributes elements direction =
     let
